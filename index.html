@@ -1,0 +1,45 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+    <style>
+      input#name:invalid:focus{
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <div class="relative flex min-h-screen flex-col justify-center overflow-hidden py-6 bg-blue-50">
+      <div class="relative bg-yellow px-6 pt-5 pb-5 shadow-xl ring-1 ring-gray-980/5 sm:mx-auto sm:rounded-lg sm:px-10">
+        <div class="mx-auto max-w-md">
+          <h1 class="text-3xl text-center font-bold leading-tight">
+            Registration Form
+          </h1>
+          <div class="divide-y divide-gray-300/50">
+          <div class="space-y-6 py-8 text-base leading-7 text-gray-680">
+            </div>
+<form id="user_form">
+   <label for="name">Name</label>
+   <input type="text" id="name" name="name">
+
+   <label for="email">Email</label>
+   <input type="email" id="email" name="email">
+
+   <label for="password">Password</label>
+   <input type="password" id="password" name="password">
+
+   <label for="dob">Date of Birth</label>
+   <input type="date" id="dob" name="dob">
+
+   <input type="checkbox" id="acceptTerms" name="acceptTerms">
+   <label for="acceptTerms">Accept Terms & Conditions</label>
+
+   <button type="submit">Submit</button>
+</form>
+<script src="script.js"></script>
+</body>
+
+</html>
